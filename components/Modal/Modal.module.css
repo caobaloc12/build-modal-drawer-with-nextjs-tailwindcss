@@ -1,0 +1,43 @@
+.mask {
+  @apply fixed inset-0 bg-black opacity-50 z-[1000];
+}
+
+.wrapper {
+  @apply fixed inset-0 z-[1000] flex items-center;
+}
+
+.modal {
+  @apply relative mx-auto rounded-md shadow-lg bg-white p-2 z-[1010] lg:p-5 animate-fade;
+}
+
+.modal.modal-default {
+  @apply w-full md:w-[600px];
+}
+
+.modal.modal-sm {
+  @apply w-full md:w-[320px];
+}
+
+.modal.modal-lg {
+  @apply w-full md:w-[800px];
+}
+
+.close-btn {
+  @apply absolute top-2 right-2 cursor-pointer w-6 h-6 text-[24px] leading-[24px] text-center text-gray-600 hover:text-gray-800;
+}
+
+.content {
+  @apply my-5;
+}
+
+.header {
+  @apply text-center text-3xl font-bold;
+}
+
+.body {
+  @apply text-center text-xl;
+}
+
+.footer {
+  @apply text-center text-sm;
+}
